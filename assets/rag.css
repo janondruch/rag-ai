@@ -1,0 +1,6 @@
+.container {
+  max-width: 720px !important;
+}
+h1 svg {
+  height: 2.5rem;
+}
