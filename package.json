@@ -1,15 +1,15 @@
 {
   "name": "rag",
-  "description": "Theme for rag.ai web.",
-  "version": "0.5.0",
+  "description": "rag.ai",
+  "version": "1.99.1",
   "engines": {
-    "ghost": ">=1.20.0"
+    "ghost": ">=5.0.0"
   },
   "license": "MIT",
   "author": {
     "name": "Jan Ondruch",
     "email": "jan@ondruch.com",
-    "url": "https://www.ondruch.com"
+    "url": "https://ondruch.com"
   },
   "config": {
     "posts_per_page": 10
