@@ -1,10 +1,202 @@
 {{!< default}}
 
-<section class="my-5">
-  <p>
-    <strong>Naučíme vaše data odpovídat na otázky.</strong>
-  </p>
-  <p>
-    Retrieval Augmented Generation (RAG) kombinuje sémantické vyhledávání informací s generováním odpovědi v přirozeném jazyce.
-  </p>
-</section>
+    <div class="bg-gray-900">
+        <main>
+          <!-- Hero section -->
+          <div class="relative isolate overflow-hidden">
+           <div class="absolute left-[calc(50%-4rem)] top-10 -z-10 transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-30rem)] xl:left-[calc(50%-24rem)]" aria-hidden="true">
+              <div class="aspect-[1108/632] w-[69.25rem] bg-gradient-to-r from-[#80bfff] to-[#4c4ce6] opacity-20" style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)"></div>
+            </div>
+            <div class="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-40 lg:flex lg:px-8 lg:pt-20">
+              <div class="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl lg:pt-8">
+                <img class="h-11" src="{{asset "logo.svg"}}" alt="rag.ai">
+                <h1 class="mt-44 sm:mt-52 lg:mt-36 text-4xl font-bold tracking-tight text-white sm:text-6xl">Učíme data zodpovídat dotazy</h1>
+                <p class="mt-6 text-lg leading-8 text-gray-300">S virtuálním asistentem si můžete psát stejně jako se svým zkušeným kolegou. Ve vašich datech najde správné informace a napíše odpověď.</p>
+                <div class="mt-10 flex items-center gap-x-6">
+                  <a href="mailto:hi@rag.ai?subject=Chci%20RAG%20aplikaci" class="rounded-md bg-sky-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-sky-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-400">Chci RAG aplikaci</a>
+                </div>
+              </div>
+              <div class="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
+                <div class="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
+                  <img src="{{asset "advochatus.png"}}" alt="App screenshot" awidth="2432" aheight="1442" class="w-[76rem] rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature section -->
+          <div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-56 lg:px-8">
+            <div class="mx-auto max-w-2xl text-center">
+              <h2 class="text-base font-semibold leading-7 text-sky-400">AI Search & Chat</h2>
+              <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Povídejte si se svými daty</p>
+              <p class="mt-6 text-lg leading-8 text-gray-300">Retrieval Augmented Generation (RAG) aplikace vám umožní klást otázky přirozeným způsobem a získávat z vašich dat přesné a aktuální odpovědi.</p>
+            </div>
+            <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+              <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
+                <div class="flex flex-col">
+                  <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-white">
+                    <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-sky-500">
+                      <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                      </svg>
+                    </div>
+                    Search
+                  </dt>
+                  <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-300">
+                    <p class="flex-auto">Sémantické vyhledávání překonává klasické vyhledávání založené na klíčových slovech tím, že analyzuje gramatickou strukturu textu, chápe kontext a vztahy mezi slovy ve větách.</p>
+                  </dd>
+                </div>
+                <div class="flex flex-col">
+                  <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-white">
+                    <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-sky-500">
+                      <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 011.037-.443 48.282 48.282 0 005.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                      </svg>                      
+                    </div>
+                    Chat
+                  </dt>
+                  <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-300">
+                    <p class="flex-auto">Chatbot nebo znalostní asistent využívá výsledky vyhledávání a jazykový model k vytvoření relevantní odpovědi v přirozeném jazyce. Odpověď může být dále obohacena o odkazy z výsledků vyhledávání.</p>
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+      
+          <!-- Feature section -->
+          <div class="mt-32 sm:mt-56">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+              <div class="mx-auto max-w-2xl sm:text-center">
+                <h2 class="text-base font-semibold leading-7 text-sky-400">RAG Advantages</h2>
+                <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Chytřejší cesta k správné odpovědi</p>
+                <p class="mt-6 text-lg leading-8 text-gray-300">Využijte výsledky nejnovějších výzkumů v oblasti umělé inteligence a velkých jazykových modelů pro nalezení toho, co skutečně hledáte.</p>
+              </div>
+            </div>
+            <div class="relative overflow-hidden pt-16">
+              <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <img src="{{asset "advochatus.png"}}" alt="App screenshot" class="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-white/10" width="2432" height="1442">
+                <div class="relative" aria-hidden="true">
+                  <div class="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-gray-900 pt-[7%]"></div>
+                </div>
+              </div>
+            </div>
+            <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
+              <dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
+                <div class="relative pl-9">
+                  <dt class="inline font-semibold text-white">
+                    <svg class="absolute left-1 top-1 h-5 w-5 text-sky-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M6.111 11.89A5.5 5.5 0 1115.501 8 .75.75 0 1017 8a7 7 0 10-11.95 4.95.75.75 0 001.06-1.06zm2.121-5.658a2.5 2.5 0 000 3.536.75.75 0 11-1.06 1.06A4 4 0 1114 8a.75.75 0 01-1.5 0 2.5 2.5 0 00-4.268-1.768zm2.534 1.279a.75.75 0 00-1.37.364l-.492 6.861a.75.75 0 001.204.65l1.043-.799.985 3.678a.75.75 0 001.45-.388l-.978-3.646 1.292.204a.75.75 0 00.74-1.16l-3.874-5.764z" clip-rule="evenodd" />
+                    </svg>
+                    Přesnost odpovědí.
+                  </dt>
+                  <dd class="inline">Díky schopnosti vyhledávání relevantních informací z externích zdrojů, poskytuje přesnější odpovědi na konkrétní dotazy.</dd>
+                </div>
+                <div class="relative pl-9">
+                  <dt class="inline font-semibold text-white">
+                    <svg class="absolute left-1 top-1 h-5 w-5 text-sky-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path d="M3.28 2.22a.75.75 0 00-1.06 1.06L5.44 6.5H2.75a.75.75 0 000 1.5h4.5A.75.75 0 008 7.25v-4.5a.75.75 0 00-1.5 0v2.69L3.28 2.22zM13.5 2.75a.75.75 0 00-1.5 0v4.5c0 .414.336.75.75.75h4.5a.75.75 0 000-1.5h-2.69l3.22-3.22a.75.75 0 00-1.06-1.06L13.5 5.44V2.75zM3.28 17.78l3.22-3.22v2.69a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.69l-3.22 3.22a.75.75 0 101.06 1.06zM13.5 14.56l3.22 3.22a.75.75 0 101.06-1.06l-3.22-3.22h2.69a.75.75 0 000-1.5h-4.5a.75.75 0 00-.75.75v4.5a.75.75 0 001.5 0v-2.69z" />
+                    </svg>
+                    Kontextuální relevance.
+                  </dt>
+                  <dd class="inline">Kombinace generativního modelu s vyhledáváním umožňuje zachování kontextuální relevance ve vygenerovaném textu.</dd>
+                </div>
+                <div class="relative pl-9">
+                  <dt class="inline font-semibold text-white">
+                    <svg class="absolute left-1 top-1 h-5 w-5 text-sky-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path d="M10 1a6 6 0 00-3.815 10.631C7.237 12.5 8 13.443 8 14.456v.644a.75.75 0 00.572.729 6.016 6.016 0 002.856 0A.75.75 0 0012 15.1v-.644c0-1.013.762-1.957 1.815-2.825A6 6 0 0010 1zM8.863 17.414a.75.75 0 00-.226 1.483 9.066 9.066 0 002.726 0 .75.75 0 00-.226-1.483 7.553 7.553 0 01-2.274 0z" />
+                    </svg>
+                    Doménová znalost.
+                  </dt>
+                  <dd class="inline">Model vytváří odpovědi na základě poskytnutých dat, čímž poskytuje aktuální a fundované informace o širokém spektru témat.</dd>
+                </div>
+                <div class="relative pl-9">
+                  <dt class="inline font-semibold text-white">
+                    <svg class="absolute left-1 top-1 h-5 w-5 text-sky-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path d="M12.232 4.232a2.5 2.5 0 013.536 3.536l-1.225 1.224a.75.75 0 001.061 1.06l1.224-1.224a4 4 0 00-5.656-5.656l-3 3a4 4 0 00.225 5.865.75.75 0 00.977-1.138 2.5 2.5 0 01-.142-3.667l3-3z" />
+                      <path d="M11.603 7.963a.75.75 0 00-.977 1.138 2.5 2.5 0 01.142 3.667l-3 3a2.5 2.5 0 01-3.536-3.536l1.225-1.224a.75.75 0 00-1.061-1.06l-1.224 1.224a4 4 0 105.656 5.656l3-3a4 4 0 00-.225-5.865z" />
+                    </svg>
+                    Přidání referencí.
+                  </dt>
+                  <dd class="inline">Odpovědi mohou obsahovat odkazy na využité zdroje, což umožňuje uživatelům ověřovat fakta.</dd>
+                </div>
+                <div class="relative pl-9">
+                  <dt class="inline font-semibold text-white">
+                    <svg class="absolute left-1 top-1 h-5 w-5 text-sky-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path d="M3.505 2.365A41.369 41.369 0 019 2c1.863 0 3.697.124 5.495.365 1.247.167 2.18 1.108 2.435 2.268a4.45 4.45 0 00-.577-.069 43.141 43.141 0 00-4.706 0C9.229 4.696 7.5 6.727 7.5 8.998v2.24c0 1.413.67 2.735 1.76 3.562l-2.98 2.98A.75.75 0 015 17.25v-3.443c-.501-.048-1-.106-1.495-.172C2.033 13.438 1 12.162 1 10.72V5.28c0-1.441 1.033-2.717 2.505-2.914z" />
+                      <path d="M14 6c-.762 0-1.52.02-2.271.062C10.157 6.148 9 7.472 9 8.998v2.24c0 1.519 1.147 2.839 2.71 2.935.214.013.428.024.642.034.2.009.385.09.518.224l2.35 2.35a.75.75 0 001.28-.531v-2.07c1.453-.195 2.5-1.463 2.5-2.915V8.998c0-1.526-1.157-2.85-2.729-2.936A41.645 41.645 0 0014 6z" />
+                    </svg>
+                    Interaktivní vyhledávání.
+                  </dt>
+                  <dd class="inline">Chat umožňuje interakci s uživatelem na základě aktuálních potřeb a požadavků.</dd>
+                </div>
+                <div class="relative pl-9">
+                  <dt class="inline font-semibold text-white">
+                    <svg class="absolute left-1 top-1 h-5 w-5 text-sky-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path d="M2 4.25A2.25 2.25 0 014.25 2h2.5A2.25 2.25 0 019 4.25v2.5A2.25 2.25 0 016.75 9h-2.5A2.25 2.25 0 012 6.75v-2.5zM2 13.25A2.25 2.25 0 014.25 11h2.5A2.25 2.25 0 019 13.25v2.5A2.25 2.25 0 016.75 18h-2.5A2.25 2.25 0 012 15.75v-2.5zM11 4.25A2.25 2.25 0 0113.25 2h2.5A2.25 2.25 0 0118 4.25v2.5A2.25 2.25 0 0115.75 9h-2.5A2.25 2.25 0 0111 6.75v-2.5zM15.25 11.75a.75.75 0 00-1.5 0v2h-2a.75.75 0 000 1.5h2v2a.75.75 0 001.5 0v-2h2a.75.75 0 000-1.5h-2v-2z" />
+                    </svg>
+                    Flexibilita zdrojů.
+                  </dt>
+                  <dd class="inline">Systém může pracovat s různorodými formáty dat, které je možné načítat z různých zdrojů.</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+      
+          <!-- CTA section -->
+          <div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-56 lg:px-8">
+            <div class="mx-auto max-w-2xl text-center">
+              <h2 class="text-base font-semibold leading-7 text-sky-400">Application</h2>
+              <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Advochatus — AI koncipient</p>
+              <p class="mt-6 text-lg leading-8 text-gray-300">Vytvořili jsme RAG aplikaci pro řešení právních problému. Prohledává zákony a odpovídá s odkazy na konkrétní paragrafy.</p>
+              <div class="mt-10 flex items-center justify-center gap-x-6">
+                <a href="https://advochat.us" class="rounded-md bg-white/10 px-2.5 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-white/20">Vyzkoušejte Advochatus <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact section -->
+          <div class="relative isolate mt-0 px-6 py-32 sm:mt-16 sm:py-40 lg:px-8">
+            <div class="absolute inset-x-0 top-10 -z-10 flex transform-gpu justify-center overflow-hidden blur-3xl" aria-hidden="true">
+              <div class="aspect-[1108/632] w-[69.25rem] flex-none bg-gradient-to-r from-[#80bfff] to-[#4c4ce6] opacity-20" style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)"></div>
+            </div>
+            <div class="mx-auto max-w-2xl text-center">
+              <h2 class="text-base font-semibold leading-7 text-sky-400">Contact</h2>
+              <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Spojte se s námi</p>
+              <p class="mt-6 text-lg leading-8 text-gray-300">Pojďte probrat, jak naučíme vaše data odpovídat.</p>
+            </div>
+            <div class="mx-auto mt-16 max-w-lg sm:mt-20 lg:mt-24">
+              <dl class="mt-10 space-y-4 text-base leading-7 text-gray-300">
+                <div class="flex gap-x-4">
+                  <dt class="flex-none">
+                    <span class="sr-only">Address</span>
+                    <svg class="h-7 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />
+                    </svg>
+                  </dt>
+                  <dd>
+                    <b>Rag AI s.r.o.</b><br>Dolní náměstí 17/9<br>746 01 Opava – Město<br>
+                  </dd>
+                </div>
+                <div class="flex gap-x-4">
+                  <dt class="flex-none">
+                    <span class="sr-only">Email</span>
+                    <svg class="h-7 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                    </svg>
+                  </dt>
+                  <dd><a class="hover:text-white" href="mailto:hi@rag.ai">hi@rag.ai</a></dd>
+                </div>
+                <div class="flex gap-x-4">
+                  <dt class="flex-none">
+                    <span class="sr-only">ID</span>
+                    <svg class="h-7 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5" />
+                    </svg>                    
+                  </dt>
+                  <dd>IČ: 06648193<br>DIČ: CZ06648193</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </main>
+    </div>
